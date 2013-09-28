@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?init class="org.zkoss.zkplus.databind.AnnotateDataBinderInit" ?>
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:h="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
+
+   
+
+
+    <window apply="bamesys_lucas.PessoaJuridicaComposer">
+         
+               
+      <hlayout>
+                     				
+	    <grid width="1050px">
+	     <columns> <column label="PESSOA JURÍDICA" width="250px" /> </columns>
+	     <rows>
+	   
+	    <row>
+		<hlayout> <label value="Filial:" /> </hlayout>
+		<hlayout>  <label value="Representante:" />	</hlayout>
+		<hlayout>  <label value="Atendente:" />	</hlayout>
+		</row>
+		 	
+		<row>
+		<hlayout><textbox width="200px" /> </hlayout>
+		<hlayout><textbox width="300px" /> </hlayout>
+		<hlayout><textbox width="300px" /> </hlayout>
+		</row>		
+        
+        <row> <label value=" " /></row>		
+       	
+		</rows>
+    </grid>
+   
+  </hlayout>
+   
+   <hlayout>
+                            
+	<grid width="1050px">
+	<columns><column label="CARACTERIZAÇÃO DA EMPRESA" width="250px" /></columns>
+	
+	<rows>
+		<row>		
+	    <hlayout> <label value="Razão Social:"  /> </hlayout>
+		<hlayout> <label value="CNPJ:" /> </hlayout>
+		<hlayout>  <label value="Fantasia:" /> </hlayout>
+		 </row>
+	    
+	    <row>
+		<hlayout> <textbox width="450px" /> </hlayout>
+		<hlayout> <textbox width="200px" /> </hlayout>
+		<hlayout>  <textbox width="300px" /></hlayout>
+		<hlayout> <label value=" "       /> </hlayout>
+		</row>
+		
+		<row>		
+	    <hlayout> <label value="Inscrição Estadual:"  /> </hlayout>
+		<hlayout> <label value="Inscrição Municipal:" /> </hlayout>
+		<hlayout> <label value="Endereço:"  /> </hlayout>
+		<hlayout> <label value="Número:" /> </hlayout>
+		
+     	</row>
+		
+		<row>
+		<hlayout> <textbox width="400px" /> </hlayout>
+		<hlayout> <textbox width="300px" /> </hlayout>
+		<hlayout> <textbox width="400px" /> </hlayout>
+		<hlayout> <textbox width="150px" /> </hlayout>		
+		</row>
+	
+	    <row>			    
+     	<hlayout> <label value="Complemento:"  /> </hlayout>
+     	<hlayout> <label value="Bairro:"  /> </hlayout>
+		<hlayout> <label value="CEP:" /> </hlayout>  
+		<hlayout> <label value="Cidade:" /> </hlayout>
+		</row>
+	
+	    <row>
+		<hlayout> <textbox width="300px" /> </hlayout>
+		<hlayout> <textbox width="300px" /> </hlayout>
+		<hlayout>  <textbox width="200px"  /></hlayout>
+		<hlayout>  <textbox width="400px" /></hlayout>
+		</row>
+	
+	    <row>			    
+     	<hlayout> <label value="Estado:"  /> </hlayout>
+     	<hlayout> <label value="Telefone:"  /> </hlayout>
+		<hlayout> <label value="Fax:" /> </hlayout>  
+		<hlayout> <label value="Email:" /> </hlayout>
+		</row>
+	
+	    <row>
+		<hlayout> <textbox width="100px" /> </hlayout>
+		<hlayout> <textbox width="200px" /> </hlayout>
+		<hlayout>  <textbox width="200px" /></hlayout>
+		<hlayout>  <textbox width="400px" constraint="/.+@.+\.[a-z]+/: Please enter an e-mail address" /></hlayout>
+		</row>
+		
+	
+	    <row>			    
+     	<hlayout> <label value="Website:"  /> </hlayout>
+     	<hlayout> <label value="Contador responsável:"  /> </hlayout>
+		<hlayout> <label value="Registro CRC:" /> </hlayout>  
+		<hlayout> <label value="Telefone do Contador:" /> </hlayout>
+		</row>
+	
+	    <row>
+		<hlayout> <textbox width="300px" /> </hlayout>
+		<hlayout> <textbox width="300px" /> </hlayout>
+		<hlayout>  <textbox width="300px" /></hlayout>
+		<hlayout>  <textbox width="200px" /></hlayout>
+		</row>
+	
+	    <row>			    
+     	<hlayout> <label value="Atividade Principal:"  /> </hlayout>
+     	<hlayout> <label value="% Vendas:"  /> </hlayout>
+		<hlayout> <label value="Faturamento Último mês:" /> </hlayout>  
+		<hlayout> <label value="Faturamento Últimos 12 meses:" /> </hlayout>
+		</row>
+	
+	    <row>
+		<hlayout> <textbox width="300px" /> </hlayout>
+		<hlayout> <textbox width="100px" /> </hlayout>
+		<hlayout>  <textbox width="200px" /></hlayout>
+		<hlayout>  <textbox width="200px" /></hlayout>
+		</row>
+	
+	    <row>			    
+     	<hlayout> <label value="Contato na Empresa:"  /> </hlayout>
+     	<hlayout> <label value="Cargo:"  /> </hlayout>
+		<hlayout> <label value="Sociedade:" /> </hlayout>  
+		<hlayout> <label value="Data da Constituição:" /> </hlayout>
+		</row>
+	
+	    <row>
+		<hlayout> <textbox width="300px" /> </hlayout>
+		<hlayout> <textbox width="300px" /> </hlayout>
+		<hlayout>  <textbox width="300px" /></hlayout>
+		<hlayout>  <datebox id="db1" width="150px" /></hlayout>
+		</row>
+	
+	    <row>		
+	    <hlayout> <label value="Capital Integralizado:"  /> </hlayout>
+		<hlayout> <label value="Data Última Alteração:" /> </hlayout>
+		<hlayout>  <label value="Número de Sócios:" /> </hlayout>
+		 </row>
+	    
+	    <row>
+		<hlayout> <textbox width="200px" /> </hlayout>
+		<hlayout> <datebox id="db2" width="150px" /> </hlayout>
+		<hlayout>  <textbox width="200px" /></hlayout>
+		<hlayout> <label value=" "       /> </hlayout>
+		</row>
+	
+		<row>		
+	    <hlayout> <label value="Possui Filiais:"  /> </hlayout>
+		<hlayout> <label value="Número de Filiais:" /> </hlayout>
+		<hlayout>  <label value="Número de Funcionários:" /> </hlayout>
+		 </row>
+	    
+	    <row>
+		<hlayout> 
+		    <combobox>
+		    <comboitem label="Sim" />
+		    <comboitem label="Não" />
+		    </combobox> 
+		</hlayout>
+		<hlayout> <textbox width="200px" /> </hlayout>
+		<hlayout>  <textbox width="200px" /></hlayout>
+		<hlayout> <label value=" "       /> </hlayout>
+		</row>
+		
+		<row> <label value=" " /></row>		
+	
+	</rows>
+  </grid>
+			    		             
+</hlayout>	         
+
+
+ <hlayout>                            
+	<grid width="1050px">
+	  <columns><column label="REPRESENTANTE(S) LEGAL(IS)" width="250px" /></columns>
+	   <rows>				
+	    <row>			    
+     	<hlayout> <label value="Representante 1:"  /> </hlayout>
+     	<hlayout> <label value="Representante 2:"  /> </hlayout>
+		<hlayout> <label value="Representante 3:" /> </hlayout>  
+		<hlayout> <label value="Assinatura:" /> </hlayout>
+		</row>
+	
+	    <row>
+		<hlayout> <textbox width="300px" /> </hlayout>
+		<hlayout> <textbox width="300px" /> </hlayout>
+		<hlayout>  <textbox width="300px" /></hlayout>
+		<hlayout>  <textbox width="300px" /></hlayout>
+		</row>		
+			
+			
+			
+      </rows>
+	</grid>
+</hlayout>
+				
+		
+					
+		 
+				
+	
+     
+  </window>
+
+</zk>
